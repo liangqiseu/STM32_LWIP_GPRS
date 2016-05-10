@@ -715,73 +715,6 @@
         <Group>
           <GroupName>::Device</GroupName>
         </Group>
-        <Group>
-          <GroupName>::RTOS</GroupName>
-          <GroupOption>
-            <CommonProperty>
-              <UseCPPCompiler>0</UseCPPCompiler>
-              <RVCTCodeConst>0</RVCTCodeConst>
-              <RVCTZI>0</RVCTZI>
-              <RVCTOtherData>0</RVCTOtherData>
-              <ModuleSelection>0</ModuleSelection>
-              <IncludeInBuild>0</IncludeInBuild>
-              <AlwaysBuild>2</AlwaysBuild>
-              <GenerateAssemblyFile>2</GenerateAssemblyFile>
-              <AssembleAssemblyFile>2</AssembleAssemblyFile>
-              <PublicsOnly>2</PublicsOnly>
-              <StopOnExitCode>11</StopOnExitCode>
-              <CustomArgument></CustomArgument>
-              <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>1</ComprImg>
-            </CommonProperty>
-            <GroupArmAds>
-              <Cads>
-                <interw>2</interw>
-                <Optim>0</Optim>
-                <oTime>2</oTime>
-                <SplitLS>2</SplitLS>
-                <OneElfS>2</OneElfS>
-                <Strict>2</Strict>
-                <EnumInt>2</EnumInt>
-                <PlainCh>2</PlainCh>
-                <Ropi>2</Ropi>
-                <Rwpi>2</Rwpi>
-                <wLevel>2</wLevel>
-                <uThumb>2</uThumb>
-                <uSurpInc>2</uSurpInc>
-                <uC99>2</uC99>
-                <useXO>2</useXO>
-                <v6Lang>0</v6Lang>
-                <v6LangP>0</v6LangP>
-                <vShortEn>2</vShortEn>
-                <vShortWch>2</vShortWch>
-                <VariousControls>
-                  <MiscControls></MiscControls>
-                  <Define></Define>
-                  <Undefine></Undefine>
-                  <IncludePath></IncludePath>
-                </VariousControls>
-              </Cads>
-              <Aads>
-                <interw>2</interw>
-                <Ropi>2</Ropi>
-                <Rwpi>2</Rwpi>
-                <thumb>2</thumb>
-                <SplitLS>2</SplitLS>
-                <SwStkChk>2</SwStkChk>
-                <NoWarn>2</NoWarn>
-                <uSurpInc>2</uSurpInc>
-                <useXO>2</useXO>
-                <VariousControls>
-                  <MiscControls></MiscControls>
-                  <Define></Define>
-                  <Undefine></Undefine>
-                  <IncludePath></IncludePath>
-                </VariousControls>
-              </Aads>
-            </GroupArmAds>
-          </GroupOption>
-        </Group>
       </Groups>
     </Target>
   </Targets>
@@ -837,12 +770,6 @@
           <targetInfo name="stm32_lwip"/>
         </targetInfos>
       </component>
-      <component Cbundle="Micrium" Cclass="RTOS" Cgroup="uC/OS Kernel" Cvariant="uCOS-II" Cvendor="Micrium" Cversion="1.0.0" condition="CM">
-        <package license="Docs\license.txt" name="RTOS" schemaVersion="1.2" supportContact="http://www.micrium.com" url="http://www.micrium.com/cmsis-pack/" vendor="Micrium" version="1.0.0"/>
-        <targetInfos>
-          <targetInfo excluded="1" name="stm32_lwip"/>
-        </targetInfos>
-      </component>
     </components>
     <files>
       <file attr="config" category="header" name="RTE_Driver\Config\RTE_Device.h" version="1.1.0">
@@ -884,12 +811,10 @@
         <targetInfos/>
       </file>
       <file attr="config" category="header" name="cfg\app_cfg.h" version="1.0.0">
-        <instance index="0">RTE\RTOS\app_cfg.h</instance>
+        <instance index="0" removed="1">RTE\RTOS\app_cfg.h</instance>
         <component Cbundle="Micrium" Cclass="RTOS" Cgroup="uC/OS Kernel" Cvariant="uCOS-II" Cvendor="Micrium" Cversion="1.0.0" condition="CM"/>
         <package license="Docs\license.txt" name="RTOS" schemaVersion="1.2" supportContact="http://www.micrium.com" url="http://www.micrium.com/cmsis-pack/" vendor="Micrium" version="1.0.0"/>
-        <targetInfos>
-          <targetInfo excluded="1" name="stm32_lwip"/>
-        </targetInfos>
+        <targetInfos/>
       </file>
       <file attr="config" category="header" name="cfg\cpu_cfg.h" version="1.0.0">
         <instance index="0" removed="1">RTE\RTOS\cpu_cfg.h</instance>
@@ -904,12 +829,10 @@
         <targetInfos/>
       </file>
       <file attr="config" category="header" name="cfg\uCOS-II\os_cfg.h" version="1.0.0">
-        <instance index="0">RTE\RTOS\os_cfg.h</instance>
+        <instance index="0" removed="1">RTE\RTOS\os_cfg.h</instance>
         <component Cbundle="Micrium" Cclass="RTOS" Cgroup="uC/OS Kernel" Cvariant="uCOS-II" Cvendor="Micrium" Cversion="1.0.0" condition="CM"/>
         <package license="Docs\license.txt" name="RTOS" schemaVersion="1.2" supportContact="http://www.micrium.com" url="http://www.micrium.com/cmsis-pack/" vendor="Micrium" version="1.0.0"/>
-        <targetInfos>
-          <targetInfo excluded="1" name="stm32_lwip"/>
-        </targetInfos>
+        <targetInfos/>
       </file>
     </files>
   </RTE>
