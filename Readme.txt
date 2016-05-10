@@ -1,5 +1,5 @@
 version 1.0
-author£ºliangqiseu
+authorï¼šliangqiseu
 2016-5-10
 
 This project is using LWIP-1.4.1 to connect GPRS modem ,and it has done well on SIM808. The MCU is STM32F103. 
