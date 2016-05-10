@@ -1,0 +1,15 @@
+.\objects\stats_1.o: d:\Keil_v5\ARM\PACK\lwIP\lwIP\1.4.1\lwip\src\core\stats.c
+.\objects\stats_1.o: .\Drivers\lwip-1.4.1\include\lwip/opt.h
+.\objects\stats_1.o: .\Drivers\lwip-1.4.1\arch\lwipopts.h
+.\objects\stats_1.o: .\Drivers\lwip-1.4.1\include\lwip/debug.h
+.\objects\stats_1.o: .\Drivers\lwip-1.4.1\include\lwip/arch.h
+.\objects\stats_1.o: .\Drivers\lwip-1.4.1\arch/cc.h
+.\objects\stats_1.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\stats_1.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\stats_1.o: .\Drivers\lwip-1.4.1\include\lwip/opt.h
+.\objects\stats_1.o: .\Drivers\lwip-1.4.1\include\lwip/def.h
+.\objects\stats_1.o: .\Drivers\lwip-1.4.1\include\lwip/stats.h
+.\objects\stats_1.o: .\Drivers\lwip-1.4.1\include\lwip/mem.h
+.\objects\stats_1.o: .\Drivers\lwip-1.4.1\include\lwip/memp.h
+.\objects\stats_1.o: .\Drivers\lwip-1.4.1\include\lwip/memp_std.h
+.\objects\stats_1.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

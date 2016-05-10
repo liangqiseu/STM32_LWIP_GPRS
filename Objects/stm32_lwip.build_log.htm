@@ -1,0 +1,203 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: qi liang, seu, LIC=JDAMM-XHHJK-IL2CB-2LC8I-GQ960-JX0N2
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.18
+Toolchain Path:  d:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DCM.DLL V1.13.6.0
+Target DLL:      Segger\JL2CM3.dll V2.99.18.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+C:\Users\liangqiseu\Desktop\stm32_lwip\stm32_lwip.uvprojx
+Project File Date:  04/07/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'd:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'stm32_lwip'
+compiling led.c...
+compiling usart1.c...
+compiling Timer.c...
+compiling key.c...
+compiling NVIC.c...
+compiling usart2.c...
+compiling main.c...
+main.c(44): warning:  #1295-D: Deprecated declaration TCP_Client_Init - give arg types
+  void TCP_Client_Init();
+main.c(125): warning:  #111-D: statement is unreachable
+        pppClose(pd);
+main.c: 2 warnings, 0 errors
+compiling sys1.c...
+compiling delay.c...
+compiling chap.c...
+compiling chpms.c...
+compiling auth.c...
+compiling fsm.c...
+Drivers\lwip-1.4.1\netif\ppp\fsm.c(606): warning:  #1293-D: assignment in condition
+    if (!proc || !((ret = proc(f, inp, len)))) {
+Drivers\lwip-1.4.1\netif\ppp\fsm.c(735): warning:  #550-D: variable "code" was set but never used
+    u_char code, id;
+Drivers\lwip-1.4.1\netif\ppp\fsm.c(735): warning:  #550-D: variable "id" was set but never used
+    u_char code, id;
+Drivers\lwip-1.4.1\netif\ppp\fsm.c: 3 warnings, 0 errors
+compiling ipcp.c...
+compiling magic.c...
+compiling ppp_oe.c...
+compiling lcp.c...
+compiling md5.c...
+compiling pap.c...
+Drivers\lwip-1.4.1\netif\ppp\pap.c(469): warning:  #550-D: variable "msg" was set but never used
+    char *msg;
+Drivers\lwip-1.4.1\netif\ppp\pap.c(511): warning:  #550-D: variable "msg" was set but never used
+    char *msg;
+Drivers\lwip-1.4.1\netif\ppp\pap.c: 2 warnings, 0 errors
+compiling randm.c...
+compiling ppp.c...
+Drivers\lwip-1.4.1\netif\ppp\ppp.c(715): warning:  #550-D: variable "c" was set but never used
+    int c;
+Drivers\lwip-1.4.1\netif\ppp\ppp.c: 1 warning, 0 errors
+compiling def.c...
+compiling dhcp.c...
+compiling vj.c...
+compiling dns.c...
+compiling init.c...
+compiling mem.c...
+compiling memp.c...
+compiling stats.c...
+compiling netif.c...
+compiling raw.c...
+compiling pbuf.c...
+compiling sys.c...
+compiling autoip.c...
+compiling tcp.c...
+compiling timers.c...
+compiling udp.c...
+compiling tcp_in.c...
+compiling tcp_out.c...
+compiling icmp.c...
+compiling igmp.c...
+compiling inet.c...
+assembling startup_stm32f10x_hd.s...
+compiling ip_addr.c...
+compiling inet_chksum.c...
+compiling ip.c...
+compiling ip_frag.c...
+compiling sys_arch.c...
+compiling sio.c...
+compiling system_stm32f10x.c...
+compiling misc.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_tim.c...
+linking...
+Program Size: Code=64724 RO-data=1288 RW-data=852 ZI-data=21364  
+FromELF: creating hex file...
+".\Objects\stm32_lwip.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.0.0.pack
+                Keil::Device:Startup:1.0.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+   * Component: Framework Version: 3.5.1
+   * Component: EXTI Version: 3.5.0
+   * Component: GPIO Version: 3.5.0
+   * Component: RCC Version: 3.5.0
+   * Component: TIM Version: 3.5.0
+   * Component: USART Version: 3.5.0
+
+Package Vendor: Micrium
+                http://www.micrium.com/cmsis-pack/Micrium.RTOS.1.0.0.pack
+                Micrium.Micrium::RTOS:uC/OS Kernel:uCOS-II:1.0.0
+                Micrium software components
+   * Component: uC/OS Kernel Variant: uCOS-II Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\liangqiseu\Desktop\stm32_lwip\RTE
+  C:\Users\liangqiseu\Desktop\stm32_lwip\RTE\Device\STM32F103RC
+  d:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include
+  d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\StdPeriph_Driver\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Source file:   Device\Source\ARM\startup_stm32f10x_hd.s
+      Source file:   Device\Source\system_stm32f10x.c
+      Include file:  RTE_Driver\Config\RTE_Device.h
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:3.5.1
+      Include file:  Device\StdPeriph_Driver\inc\misc.h
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_conf.h
+      Include file:  Device\StdPeriph_Driver\templates\stm32f10x_it.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f10x_it.c
+
+   * Component: Keil::Device:StdPeriph Drivers:EXTI:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_exti.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_exti.c
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_rcc.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_rcc.c
+
+   * Component: Keil::Device:StdPeriph Drivers:TIM:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_tim.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_tim.c
+
+   * Component: Keil::Device:StdPeriph Drivers:USART:3.5.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_usart.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_usart.c
+
+   * Component: Micrium.Micrium::RTOS:uC/OS Kernel:uCOS-II:1.0.0
+      Include file:  cfg\app_cfg.h
+      Include file:  cfg\uCOS-II\os_cfg.h
+      Include file:  Software\uCOS-II\Source\os.h
+      Source file:   Software\uCOS-II\Source\os_core.c
+      Source file:   Software\uCOS-II\Source\os_dbg_r.c
+      Source file:   Software\uCOS-II\Source\os_flag.c
+      Source file:   Software\uCOS-II\Source\os_mbox.c
+      Source file:   Software\uCOS-II\Source\os_mem.c
+      Source file:   Software\uCOS-II\Source\os_mutex.c
+      Source file:   Software\uCOS-II\Source\os_q.c
+      Source file:   Software\uCOS-II\Source\os_sem.c
+      Source file:   Software\uCOS-II\Source\os_task.c
+      Source file:   Software\uCOS-II\Source\os_time.c
+      Source file:   Software\uCOS-II\Source\os_tmr.c
+      Include file:  Software\uCOS-II\Source\ucos_ii.h
+      Include file:  Software\uCOS-II\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h
+      Source file:   Software\uCOS-II\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu_a.asm
+      Source file:   Software\uCOS-II\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu_c.c
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.\objects\ethernetif.o: Drivers\lwip-1.4.1\netif\ethernetif.c
+.\objects\ethernetif.o: .\Drivers\lwip-1.4.1\include\lwip/opt.h
+.\objects\ethernetif.o: .\Drivers\lwip-1.4.1\include\lwipopts.h
+.\objects\ethernetif.o: .\Drivers\lwip-1.4.1\include\lwip/debug.h
+.\objects\ethernetif.o: .\Drivers\lwip-1.4.1\include\lwip/arch.h
+.\objects\ethernetif.o: .\Drivers\lwip-1.4.1\arch/cc.h
+.\objects\ethernetif.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\ethernetif.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\ethernetif.o: .\Drivers\lwip-1.4.1\include\lwip/opt.h
